@@ -162,28 +162,33 @@
 
 #--> Polymorphism
 
-class Car:
-    def __init__(self,brand, model):
-        self.__brand = brand
-        self.model = model
+# class Car:
+#     def __init__(self,brand, model):
+#         self.__brand = brand
+#         self.model = model
 
-    def get_brand(self):
-        return self.__brand + "!"    
+#     def get_brand(self):
+#         return self.__brand + "!"    
 
-    def full_name(self):
-        return f"{self.__brand} {self.model}"
-    def fuel_type(self):
-        return "Petrol or Disel"
+#     def full_name(self):
+#         return f"{self.__brand} {self.model}"
+#     def fuel_type(self):
+#         return "Petrol or Disel"
 
-class ElectricCar(Car):
-    def __init__(self, brand, model, battery_size):
-        super().__init__(brand,model) #Super is used t get the already declare barnd and models
-        self.battery_size = battery_size
-    def fuel_type(self):
-        return "Electric Charge"
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand,model) #Super is used t get the already declare barnd and models
+#         self.battery_size = battery_size
+#     def fuel_type(self):
+#         return "Electric Charge"
 
 
-my_car = Car("Honda","City")
-my_eCar = ElectricCar("tesla","Motor M", "120kWh")
-print(my_car.fuel_type())
-print(my_eCar.fuel_type())
+# my_car = Car("Honda","City")
+# my_eCar = ElectricCar("tesla","Motor M", "120kWh")
+# print(my_car.fuel_type())
+# print(my_eCar.fuel_type())
+
+#--------------------------------------------------------------------
+
+#-------------------------------------------------------Interface in Python-------------------------------------------------------
+
