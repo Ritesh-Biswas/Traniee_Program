@@ -99,3 +99,17 @@
 #Now this is what we called it ABSRACTION that we only see the required output not seeing it behinf=d the scene
 
 #----Encapsultion->Wrapping the data and fucniton into a single unit (objects)
+
+#----Private->Making sensetive info inaccesible outisde th class
+class Accounts:
+    def __init__(self,acc_no,acc_password):
+        self.acc_no = acc_no
+        self.__acc_password = acc_password #this __ before acc_password make it private
+    
+    def reset_pass(self):
+        print(self.__acc_password)
+
+acc1 = Accounts("1234","fuckyou")
+print("Account No", acc1.acc_no)
+# print("Accoutn Password", acc1.__acc_password)
+print(acc1.reset_pass())
