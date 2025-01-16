@@ -68,16 +68,34 @@
 #                 -> It works only in Class Level
 #                 -> We used @staticmethod -> this is also known as decorator
 
-class Student4:
-    university = "Chandigarh University"
-    def __init__(self, name):
-        self.name = name
-    @staticmethod
-    def hello():
-        print("Hello MF") 
+# class Student4:
+#     university = "Chandigarh University"
+#     def __init__(self, name):
+#         self.name = name
+#     @staticmethod
+#     def hello():
+#         print("Hello MF") 
 
-    def welcome(self):#We had ve to declare self, if we use it or not we have to declare it 
-        print("Welcome Students...",self.name)
+#     def welcome(self):#We had ve to declare self, if we use it or not we have to declare it 
+#         print("Welcome Students...",self.name)
 
-s1 = Student4("RItesh")
-s1.hello()
+# s1 = Student4("RItesh")
+# s1.hello()
+
+
+#----Abstraction->Hiding the implementation details of class and only showing the essential features to the user.
+# class Car:
+#     def __init__(self):
+#         self.acc = False
+#         self.brk = False
+#         self.clutch = False
+#     def start(self):
+#         self.acc = True
+#         self.clutch - True
+#         print("Car is started...")
+
+# s1 = Car()
+# s1.start()
+#Now this is what we called it ABSRACTION that we only see the required output not seeing it behinf=d the scene
+
+#----Encapsultion->Wrapping the data and fucniton into a single unit (objects)
