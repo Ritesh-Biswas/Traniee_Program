@@ -38,14 +38,28 @@
 #             ->Obj.at-> Also know as Instance Atrribute, Which is differnet and vary from object to object
 #                     -> For this we used slef.name,fullname etc
 #example
-class Student_data():
-    college = "Chandigarh Unverity"#Class atr
-    print("Univerisyt Name is :-",college)
-    def __init__(self,name):
-        self.name = name#Obj atrr
-        print("Name is :-",name)
+# class Student_data():
+#     college = "Chandigarh Unverity"#Class atr
+#     print("Univerisyt Name is :-",college)
+#     def __init__(self,name):
+#         self.name = name#Obj atrr
+#         print("Name is :-",name)
 
-s1 = Student_data("Ritesh")
-print(s1.name,s1.college)
-s2 = Student_data("Sankalp")
-print(s2.name, s2.college)
+# s1 = Student_data("Ritesh")
+# print(s1.name,s1.college)
+# s2 = Student_data("Sankalp")
+# print(s2.name, s2.college)
+
+#----Methods->Class had two things i.e data & methods
+#           ->Data means Attributes
+#           ->Methos means what you can doen with that
+class Student3:
+    university = "Chandigarh University"
+    def __init__(self, name):
+        self.name = name
+
+    def welcome(self):#We had ve to declare self, if we use it or not we have to declare it 
+        print("Welcome Students...",self.name)
+
+s1 = Student3("Ritesh")
+s1.welcome()
