@@ -43,3 +43,15 @@ dict = {
 #                     ->dict.items() it return all the (key,val) pairs as tuples
 #                     ->dict.get("key") return the key according th value
 #                     ->dict.update(newDict) insert specific item to the dictionary 
+
+#-> Sets
+#Set is the collection of the unsorted items
+#Each item should be unique and immutable
+
+nums = {1,2,3,4}
+#-> Sets Methods ->nums.add(el) add an element
+#                ->nums.remove(el) removes the element
+#                ->nums.clear() empty the set by clearing the sxisting elemsnts
+#                ->nums.pop() removes the random value
+#                ->nums.union(set2) combines bothe the sets values and return new set
+#                ->nums.intersection(set2) combines the common values fro both sets and return new set
