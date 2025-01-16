@@ -25,3 +25,21 @@ marks = [123.2, 145.2, 134,150,144]
 marks2 = (2,1,3,4,5)
 #->Tuple Methods -> marks2.index(el)
 #                -> marks2.count(el)
+
+#---------------Dictionary & Sets------------------
+#-> Dicitonary
+#Dictionary is used to store the data values in key:value pair
+#Tehy are unorderd, mutable and dont's allow duplicasy
+
+dict = {
+    "name" : "Ritesh",
+    "CGPA" : 9.6,
+    "marks" : [85,77,80]
+}
+
+#There is a Nested Dictonary 
+#-> Dictonary Methods ->dict.keys() it return all the keys
+#                     ->dict.values() it return all values
+#                     ->dict.items() it return all the (key,val) pairs as tuples
+#                     ->dict.get("key") return the key according th value
+#                     ->dict.update(newDict) insert specific item to the dictionary 
