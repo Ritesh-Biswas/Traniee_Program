@@ -17,3 +17,11 @@ marks = [123.2, 145.2, 134,150,144]
 #                ->list.insert(idx,el)
 #                ->list.remove(1) it removes the first occurnce of the element
 #                ->list.pop(idx) it remove the element ate the index
+
+
+#-> Tuples
+#Tuples are IMMUTABLE 
+
+marks2 = (2,1,3,4,5)
+#->Tuple Methods -> marks2.index(el)
+#                -> marks2.count(el)
