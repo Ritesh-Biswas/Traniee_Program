@@ -53,13 +53,31 @@
 #----Methods->Class had two things i.e data & methods
 #           ->Data means Attributes
 #           ->Methos means what you can doen with that
-class Student3:
+# class Student3:
+#     university = "Chandigarh University"
+#     def __init__(self, name):
+#         self.name = name
+
+#     def welcome(self):#We had ve to declare self, if we use it or not we have to declare it 
+#         print("Welcome Students...",self.name)
+
+# s1 = Student3("Ritesh")
+# s1.welcome()
+
+#----Static Method->These Method dont use SELF parameter 
+#                 -> It works only in Class Level
+#                 -> We used @staticmethod -> this is also known as decorator
+
+class Student4:
     university = "Chandigarh University"
     def __init__(self, name):
         self.name = name
+    @staticmethod
+    def hello():
+        print("Hello MF") 
 
     def welcome(self):#We had ve to declare self, if we use it or not we have to declare it 
         print("Welcome Students...",self.name)
 
-s1 = Student3("Ritesh")
-s1.welcome()
+s1 = Student4("RItesh")
+s1.hello()
