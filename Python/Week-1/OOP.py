@@ -18,16 +18,34 @@
 #               ->Construtor always take the arguments or parameter which is known as self paramete
 #               ->self means the new/ currently object we are creating, like 'khud ko'
 #creating own init funtion
-class Student2:
+# class Student2:
 
-    #Default Consrtuctor
-    def __init__(self):
-        pass
+#     #Default Consrtuctor
+#     def __init__(self):
+#         pass
 
-    # Parameterized Constructor
-    def __init__(self,fullname):
-        self.name = fullname
-        print("Adding new Student in Databse")
+#     # Parameterized Constructor
+#     def __init__(self,fullname):
+#         self.name = fullname
+#         print("Adding new Student in Databse")
 
-s2 = Student2("Ritesh")
-print(s2.name)
+# s2 = Student2("Ritesh")
+# print(s2.name)
+
+#----Attribute->It can be nay data or any valuse or any varaiable like name, fullname etc
+#             ->Two Types of Attributes i.e 1.)Class.atr 2.)obj.atr
+#             ->Class.atr-> Common for all the objects. Owned by Class and commone for all the objects
+#             ->Obj.at-> Also know as Instance Atrribute, Which is differnet and vary from object to object
+#                     -> For this we used slef.name,fullname etc
+#example
+class Student_data():
+    college = "Chandigarh Unverity"#Class atr
+    print("Univerisyt Name is :-",college)
+    def __init__(self,name):
+        self.name = name#Obj atrr
+        print("Name is :-",name)
+
+s1 = Student_data("Ritesh")
+print(s1.name,s1.college)
+s2 = Student_data("Sankalp")
+print(s2.name, s2.college)
